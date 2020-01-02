@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/Users/mac/Documents/eclipse/Libarys/commons-io-2.4/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="/Users/mac/Documents/eclipse/Libarys/Jetty/websocket/javax-websocket-client-impl-9.2.10.v20150310.jar"/>
+	<classpathentry kind="lib" path="/Users/mac/Documents/eclipse/Libarys/Jetty/websocket/javax-websocket-server-impl-9.2.10.v20150310.jar"/>
+	<classpathentry kind="lib" path="/Users/mac/Documents/eclipse/Libarys/Jetty/websocket/javax.websocket-api-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/mac/Documents/eclipse/Libarys/Jetty/websocket/websocket-api-9.2.10.v20150310.jar"/>
+	<classpathentry kind="lib" path="/Users/mac/Documents/eclipse/Libarys/Jetty/websocket/websocket-client-9.2.10.v20150310.jar"/>
+	<classpathentry kind="lib" path="/Users/mac/Documents/eclipse/Libarys/Jetty/websocket/websocket-common-9.2.10.v20150310.jar"/>
+	<classpathentry kind="lib" path="/Users/mac/Documents/eclipse/Libarys/Jetty/websocket/websocket-server-9.2.10.v20150310.jar"/>
+	<classpathentry kind="lib" path="/Users/mac/Documents/eclipse/Libarys/Jetty/websocket/websocket-servlet-9.2.10.v20150310.jar"/>
+	<classpathentry kind="lib" path="/Users/mac/Documents/eclipse/Libarys/Jetty/jetty-http-9.2.10.v20150310.jar"/>
+	<classpathentry kind="lib" path="/Users/mac/Documents/eclipse/Libarys/Jetty/jetty-server-9.2.10.v20150310.jar"/>
+	<classpathentry kind="lib" path="/Users/mac/Documents/eclipse/Libarys/Jetty/servlet-api-3.1.jar"/>
+	<classpathentry kind="lib" path="/Users/mac/Documents/eclipse/Libarys/Jetty/jetty-util-9.2.10.v20150310.jar"/>
+	<classpathentry kind="lib" path="/Users/mac/Documents/eclipse/Libarys/Jetty/jetty-io-9.2.10.v20150310.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

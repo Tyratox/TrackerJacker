@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>TrackerJacker</title>
+		<script src="js/jquery-2.1.4.min.js" charset="utf-8"></script>
+		<script src="js/jquery.terminal-0.8.8.min.js" charset="utf-8"></script>
+		<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+		<script>
+			$(function(){
+				d
+				
+				var shell = $('#shell').terminal(function(command, terminal) {
+					ws.send(command);
+				}, {
+						prompt: 'user@remotehost > ',
+						name: 'shell',
+						greetings : '',
+						exit : false
+				});
+				
+				
+				ws.onopen = function() {
+					shell.echo("[[;#fff;]STATE:] Connection estahblished!");
+					setTimeout(function(){
+						if($("[data-text='Username:']").length > 0){
+							shell.set_prompt($("[data-text='Username:']").next().text().trim() + "@" + location.hostname + ":4747 > ");
+						}
+					}, 1000);
+				};
+				
+				ws.onmessage = function (evt) {
+					shell.echo(evt.data);
+				};
+				
+				ws.onclose = function() {
+					shell.pause();
+					shell.echo("[[;#fff;]STATE:] Connection closed!");
+				};
+				
+				ws.onerror = function(err) {
+					shell.echo("[[;#fff;]STATE:] Error: "+err);
+				};
+				
+				
+			});
+		</script>
+		<style>
+			html, body{
+				height:100%;
+				width:100%;
+				
+				overflow:hidden;
+				
+				margin:0;
+				
+				background-color: #000;
+				color:#0f0;
+				font-family: 'Source Code Pro', monospace, sans-serif;
+			}
+			a{
+				
+			}
+			#shell{
+				position: absolute;
+				top:10%;
+				bottom:10%;
+				left:5%;
+				right:5%;
+				overflow-x:hidden;
+				overflow-y: scroll;
+			}
+			.clipboard{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			
+		</header>
+		<main>
+			<div id="shell">
+				
+			</div>
+		</main>
+		<footer>
+			
+		</footer>
+	</body>
+</html>
